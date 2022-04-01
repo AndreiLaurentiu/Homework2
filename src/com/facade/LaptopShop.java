@@ -8,6 +8,12 @@ public class LaptopShop {
         LaptopAsus laptopAsus = new LaptopAsus(234, 3000);
         Seller seller = new Seller(laptopAcer, laptopAsus);
 
+        System.out.println("""
+                Welcome to your online Laptop shop!
+                For today, we have have for sale Acer and Asus laptops.
+                To inspect the information about each type, just type acer or asus.
+                Write quit to exit the app.""");
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("What brand of laptop would you like to see?");
         String input = scanner.nextLine();
